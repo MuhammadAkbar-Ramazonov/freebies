@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="visually-hidden">form section</h1>
+            <div class="container">
+                <div class="site-wrapper">
+                    <div class="site-title">
+                        <h2 class="site-title-h2">Let’s get you set up</h2>
+                        <p class="site-title-p">Itshould only take a couple of minutes
+                            to pair with your watch</p>
+                    </div>
+                    <div class="site-rorm-wrapper">
+                        <form class="site-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                            <label class="label-name" >
+                                Name
+                                <input class="user-name" type="text" name="user_name" placeholder="Name">
+                            </label>
+                            <div class="gender-wrapper">
+                                <label class="label-male">
+                                    <input class="form-input visually-hidden" type="radio" name="user_gender" placeholder="Male" value="Male">
+                                    <span>Gender</span> 
+                                        <span class="male-input"></span>
+                                        <span class="user-gender-male">Male</span>
+                                </label>
+                               
+                                <label class="label-female">
+                                    <input class="female-input visually-hidden" type="radio" name="user_gender" placeholder="Female" value="Female">
+                                        <span class="female-input"></span>
+                                        <span class="user-gender-Female">Female</span>
+                                </label>
+                            </div>
+                            
+                            <label class="label-born" >
+                                Date of Birth
+                                <input class="birthday-input" class="user-born" type="date" name="user_born" placeholder="01/02/1983">
+                            </label>
+                            <label class="label-email" >
+                                Email
+                                <input class="email-input" type="email" name="user_email" placeholder="kendall@emailcom">
+                            </label>
+                            <label class="label-mobile" >
+                                Mobile
+                                <input class="mobile-input" type="tel" name="user_mobile" placeholder="+91 98765 43210">
+                            </label>
+                            <label class="label-id" >
+                                Customer ID
+                                <input class="id-input" type="text" name="customer_id" placeholder="576802-ERD0348 45">
+                            </label>
+                            
+                            <div class="membership-wrapper">
+                                <label class="label-membership">
+                                    <input class="classic-input visually-hidden" type="radio" name="user_membership" placeholder="Classic" value="Classic">
+                                    <span>Membership</span> 
+                                    <span class="classic-input-img"></span>
+                                    <span class="user-membership-classic">Classic</span>
+                                </label>
+                                <label class="label-membership">
+                                    <input class="silver-input visually-hidden" type="radio" name="user_membership" placeholder="Silver" value="Silver">
+                                    <span class="silver-input-img"></span>
+                                    <span class="user-membership-silver">Silver</span>    
+                                </label>
+                                <label class="label-membership">
+                                    <input class="gold-input visually-hidden" type="radio" name="user_membership" placeholder="Gold" value="Gold">
+                                    <span class="gold-input-img"></span>
+                                    <span class="user-membership-gold">Gold</span>    
+                                </label>
+
+                            </div>
+                                
+                            <button class="reset-button" type="reset"> CANCEL </button>
+                            <button class="save-button" type="submit"> SAVE </button>
+                        </form>
+                    </div>    
+                </div>
+                               
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

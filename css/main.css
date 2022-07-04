@@ -1,0 +1,455 @@
+:root{
+    /* --main-membership */
+}
+
+
+
+@font-face {
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/actor-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/actor-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Actor", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container{
+    width: 1240px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+section{
+    padding: 50px;
+    background-color: #F2F2F2;;
+}
+
+.site-wrapper{
+    display: flex;
+}
+.site-title{
+    width: 350px;
+    height: 666px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-image: url("../kartinki/girl.svg");
+    background-position: center calc(50% - 110px);
+    background-repeat: no-repeat;
+    background-color: #FFD500;
+    border-radius: 22px 0px 0px 22px;
+}
+
+.site-title-h2{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 340px;
+    margin-bottom: 10px;
+    color: #383838;
+}
+
+.site-title-p{
+    width: 176px;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    margin-left: 32px;
+    color: #383838;
+}
+
+.site-title-p::after{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-top: 40px;
+    background-image: url("../kartinki/next.svg");
+    background-size: 55px 55px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+
+.site-rorm-wrapper{
+    background-color: #fff;
+    border-radius: 0 25px 25px 0 ;
+}
+
+
+
+.site-form {
+    padding-top: 53px;
+    padding-right: 74px;
+    padding-left: 71px;
+}
+.label-name {
+    display: block;
+    font-size: 15px;
+    line-height: 9px;
+    margin-bottom: 20px;
+    color: #373D40;
+}
+.user-name {
+    width: 323px;
+    height: 43px;
+    font-weight: 400;
+    line-height: 9px;
+    margin-left: 75px;
+    padding: 10px;
+    color: #373D40;
+    caret-color: #4A90E2;
+    border: 0;
+    background-color: #F0F3F4;
+    border-radius: 2.64604px;
+    outline: 0;
+}
+
+.user-name::placeholder{
+    font-weight: 400;
+    line-height: 9px;
+    color: #B1BFCD;
+}
+
+.user-name:focus{
+    border: 1px solid #CAD7DD;
+    
+}
+
+
+
+.gender-wrapper{
+    display: flex;
+}
+
+.label-male {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.mail-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.male-input {
+    margin-left: 75px;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-left: 68px;
+    padding: 10px;
+    font-weight: 400;
+    line-height: 9px;
+    color: #373D40;
+    background-color: #F5F8F9;
+    background-image: url("../kartinki/Male.svg");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    border-radius: 50%;
+    
+}
+
+.form-input:checked ~ .male-input{
+    background-color: #FFD500;
+}
+.user-gender-male {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 9px;  
+    margin-left: 10px;
+    color: #B1BFCD;
+}
+
+.label-female{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.female-input {
+    margin-left: 75px;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-left: 34px;
+    padding: 10px;
+    font-weight: 400;
+    line-height: 9px;
+    color: #373D40;
+    background-color: #F5F8F9;
+    background-image: url("../kartinki/Female.svg");
+    background-size: 20px 25px;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 2px) ;
+    border-radius: 50%;
+    
+}
+.user-gender-Female {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 9px; 
+    margin-left: 10px;   
+    color: #B1BFCD;
+}
+
+.female-input:checked ~ .female-input{
+    background-color: #FFD500;
+}
+
+.label-born {
+    display: block;
+    font-size: 15px;
+    line-height: 9px;
+    margin-bottom: 20px;
+    color: #373D40;
+}
+.birthday-input {
+    width: 323px;
+    height: 43px;
+    margin-left: 30px;
+    padding: 10px;
+    font-weight: 400;
+    line-height: 9px;
+    caret-color: #4A90E2;
+    color: #373D40;
+    border: 0;
+    background-color: #F0F3F4;
+    border-radius: 2.64604px;
+    outline: 0;
+}
+
+
+.birthday-input:focus{
+    border: 1px solid #CAD7DD;
+}
+.birthday-input::placeholder{
+    font-weight: 400;
+    line-height: 9px;
+    color: #B1BFCD;
+}
+
+.label-email {
+    display: block;
+    font-size: 15px;
+    line-height: 9px;
+    margin-bottom: 20px;
+    color: #373D40;
+}
+.email-input {
+    width: 323px;
+    height: 43px;
+    margin-left: 75px;
+    padding: 10px;
+    font-weight: 400;
+    line-height: 9px;
+    caret-color: #4A90E2;
+    color: #373D40;
+    background-color:#F0F3F4;
+    border: 0;
+    border-radius: 2.64604px;
+    outline: 0;
+}
+
+.email-input:focus{
+    border: 1px solid #CAD7DD;
+}
+
+
+.email-input::placeholder{
+    font-weight: 400;
+    line-height: 9px;
+    color: #B1BFCD;
+}
+
+.label-mobile {
+    display: block;
+    font-size: 15px;
+    line-height: 9px;
+    margin-bottom: 20px;
+    color: #373D40;
+}
+.mobile-input {
+    width: 323px;
+    height: 43px;
+    margin-left: 67px;
+    padding: 10px;
+    font-weight: 400;
+    line-height: 9px;
+    caret-color: #4A90E2;
+    color: #373D40;
+    background-color: #F0F3F4;
+    border: 0;
+    border-radius: 2.64604px;
+    outline: 0;
+}
+
+.mobile-input:focus{
+    border: 1px solid #CAD7DD;
+}
+
+
+.mobile-input::placeholder{
+    font-weight: 400;
+    line-height: 9px;
+    color: #B1BFCD;
+}
+
+.label-id {
+    display: block;
+    font-size: 15px;
+    line-height: 9px;
+    margin-bottom: 20px;
+    color: #373D40;
+}
+.id-input {
+    width: 323px;
+    height: 43px;
+    margin-left: 30px;
+    padding: 10px;
+    font-weight: 400;
+    line-height: 9px;
+    caret-color: #4A90E2;
+    color: #373D40;
+    background-color: #F0F3F4;
+    border: 0;
+    border-radius: 2.64604px;
+    outline: 0;
+}
+
+.id-input:focus{
+    border: 1px solid #CAD7DD;
+}
+
+
+.id-input::placeholder{
+    font-weight: 400;
+    line-height: 9px;
+    color: #B1BFCD;
+}
+
+.membership-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.label-membership {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 9px;
+    margin-bottom: 63px;
+    color: #373D40;
+}
+
+.classic-input:checked ~ .classic-input-img{
+    background-color: #FFD500;
+}
+
+.classic-input-img {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-left: 31px;
+    background-color: #C7C7C7;;
+    background-image: url("../kartinki/card.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    border-radius: 50%;
+}
+
+.user-membership-classic {
+    font-size: 15px;
+    line-height: 9px;
+    margin-left: 10px;
+    color: #373D40;
+    
+}
+
+.silver-input:checked ~ .silver-input-img{
+    background-color: #FFD500;
+}
+
+.silver-input-img {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-left: 14px;
+    background-color: #C7C7C7;;
+    background-image: url("../kartinki/card.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    border-radius: 50%;
+}
+.user-membership-silver {
+    font-size: 15px;
+    line-height: 9px;
+    margin-left: 10px;
+    color: #373D40;
+}
+
+.gold-input:checked ~ .gold-input-img{
+    background-color: #FFD500;
+}
+
+.gold-input-img {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-left: 14px;
+    background-color: #C7C7C7;;
+    background-image: url("../kartinki/card.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    border-radius: 50%;
+}
+.user-membership-gold {
+    font-size: 15px;
+    line-height: 9px;
+    margin-left: 10px;
+    color: #373D40;
+}
+.reset-button {
+    width: 100px;
+    height: 40px;
+    margin-left: 197px;
+    margin-right: 20px;
+    border: 0;
+    background-color: #F5F8F9;
+    border-radius: 3px;
+}
+.save-button {
+    width: 100px;
+    height: 40px;
+    border: 0;
+    background-color: #60E6C5;
+    border-radius: 3px;
+}
